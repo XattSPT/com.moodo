@@ -1,0 +1,19 @@
+{
+  "name": "moodo",
+  "version": "1.0.0",
+  "description": "This app integrate `MelCloud` into Homey.",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "http.min": "^2.0.1",
+    "socket.io-client": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gerard Ricart",
+  "license": "ISC"
+}
