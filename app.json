@@ -93,8 +93,8 @@
                 "en": "Moodo"
             },
             "images": {
-                "small": "drivers/melcloud/assets/images/small.png",
-                "large": "drivers/melcloud/assets/images/large.png"
+                "small": "drivers/moodo/assets/images/small.png",
+                "large": "drivers/moodo/assets/images/large.png"
             },
             "class": "fan",
             "capabilities": [

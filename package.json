@@ -1,7 +1,7 @@
 {
   "name": "moodo",
   "version": "1.0.0",
-  "description": "This app integrate `MelCloud` into Homey.",
+  "description": "This app integrate `Moodo` into Homey.",
   "main": "app.js",
   "directories": {
     "lib": "lib"
