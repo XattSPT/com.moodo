@@ -15,5 +15,8 @@ The repository is available at: https://github.com/XattSPT/com.moodo
 
 ## Change Log:
 
+### v 1.0.1
+Fix loosing config after a day. 
+
 ### v 1.0.0
 First public release
