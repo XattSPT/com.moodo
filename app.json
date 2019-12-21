@@ -238,11 +238,11 @@
             },
             "class": "fan",
             "capabilities": [
-                "onoff",
                 "favs",
                 "mode_interval",
                 "dim",
                 "shuffle",
+                "onoff",
                 "fav",
                 "shuffles",
                 "slot0",
