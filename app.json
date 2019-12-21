@@ -3,23 +3,31 @@
     "sdk": 2,
     "brandColor": "#221436",
     "name": {
-        "en": "Moodo"
+        "en": "Moodo",
+        "es": "Moodo"
     },
     "description": {
-        "en": "Integrate Moodo into Homey"
+        "en": "Integrate Moodo into Homey",
+        "es": "Integra Moodo en tu Homey"
      },
     "category": [
         "tools",
         "climate"
     ],
-	"version": "1.0.1",
-    "compatibility": ">=2.1.2",
+	"version": "1.5.0",
+    "compatibility": ">=3.0.0",
     "tags": {
         "en": [
             "Moodo",
             "Air",
             "Scent",
             "Fan"
+        ],
+        "es": [
+            "Moodo",
+            "Ambientador",
+            "Escencias",
+            "Ventilador"
         ]
      },
     "images": {
@@ -30,6 +38,10 @@
         "name": "Gerard Ricart",
         "email": "gerard.ricart@gmail.com"
     },
+    "bugs": {
+        "url": "https://github.com/XattSPT/com.moodo/issues"
+    },
+    "source": "https://github.com/XattSPT/com.moodo",
     "contributing": {
         "donate": {
             "paypal": {
@@ -38,10 +50,30 @@
         }
     },
     "capabilities": {
+        "favs": {
+            "type": "enum",
+            "title": {
+                "en": "Favorites",
+                "es": "Favoritos"
+            },
+            "getable": true,
+            "setable": true,
+            "uiComponent": null,
+            "uiQuickAction": true,
+            "values":[
+              { "id": "XVBEdF9eiEZ_i0WX", "title": "Prova" },
+              { "id": "WwP8ZV9eiKIii0YJ", "title": "Cava Sprinkles" },
+              { "id": "WwP8MF9eiFlLi0Wd", "title": "Capri Sunset" },
+              { "id": "WwP6QV9eiNc1i0XR", "title": "Gardens of Avignon" },
+              { "id": "WwP6B19eiLAmi0YO", "title": "Palermo Market" },
+              { "id": "WwP5mF9eiOkti0ZJ", "title": "Mediterranean Dreams" }
+            ]
+        },
         "mode_interval": {
             "type": "enum",
             "title": {
-                "en": "Interval Mode"
+                "en": "Interval Mode",
+                "es": "Modo Intervalo"
             },
             "getable": true,
             "setable": true,
@@ -51,25 +83,29 @@
                 {
                   "id": "off",
                   "title": {
-                    "en": "Off"
+                    "en": "Off",
+                    "es": "Apagado"
                   }
                 },
                 {
                   "id": "econ",
                   "title": {
-                    "en": "Econ Mode"
+                    "en": "Econ Mode",
+                    "es": "Modo Ahorro"
                    }
                 },
                 {
                   "id": "efficient",
                   "title": {
-                    "en": "Efficent Mode"
+                    "en": "Efficent Mode",
+                    "es": "Modo Eficiente"
                   }
                 },
                 {
                     "id": "powerfull",
                     "title": {
-                      "en": "Powerfull Mode"
+                      "en": "Powerfull Mode",
+                      "es": "Modo Potente"
                     }
                 }
             ]
@@ -77,20 +113,124 @@
         "shuffle": {
           "type": "boolean",
           "title": {
-            "en": "Shuffle"
+            "en": "Shuffle",
+            "es": "Aleatorio"
           },
           "getable": true,
           "setable": true,
           "uiComponent": "toggle",
           "uiQuickAction": true,
           "icon": "/assets/shuffle.svg"
+        },
+        "shuffles": {
+            "type": "boolean",
+            "title": {
+              "en": "Shuffle",
+              "es": "Aleatorio"
+            },
+            "uiComponent": "sensor",
+            "insights": false,
+            "getable": true,
+            "setable": false,
+            "units": {
+              "en": "",
+              "es": ""
+            },
+            "uiQuickAction": false,
+            "icon": "/assets/shuffle.svg"
+        },
+        "fav": {
+            "type": "string",
+            "title": {
+              "en": "Essence",
+              "es": "Esencia"
+            },
+            "uiComponent": "sensor",
+            "insights": false,
+            "getable": true,
+            "setable": false,
+            "units": {
+              "en": "",
+              "es": ""
+            },
+            "uiQuickAction": false,
+            "icon": "/assets/essence.svg"
+        },
+        "slot0": {
+            "type": "string",
+            "title": {
+              "en": "Capsule 1",
+              "es": "Capsula 1"
+            },
+            "uiComponent": "sensor",
+            "insights": false,
+            "getable": true,
+            "setable": false,
+            "units": {
+              "en": "",
+              "es": ""
+            },
+            "uiQuickAction": false,
+            "icon": "/assets/slot0.svg"
+        },
+        "slot1": {
+            "type": "string",
+            "title": {
+              "en": "Capsule 2",
+              "es": "Capsula 2"
+            },
+            "uiComponent": "sensor",
+            "insights": false,
+            "getable": true,
+            "setable": false,
+            "units": {
+              "en": "",
+              "es": ""
+            },
+            "uiQuickAction": false,
+            "icon": "/assets/slot1.svg"
+        },
+        "slot2": {
+            "type": "string",
+            "title": {
+              "en": "Capsule 3",
+              "es": "Capsula 3"
+            },
+            "uiComponent": "sensor",
+            "insights": false,
+            "getable": true,
+            "setable": false,
+            "units": {
+              "en": "",
+              "es": ""
+            },
+            "uiQuickAction": false,
+            "icon": "/assets/slot2.svg"
+        },
+        "slot3": {
+            "type": "string",
+            "title": {
+              "en": "Capsule 4",
+              "es": "Capsula 4"
+            },
+            "uiComponent": "sensor",
+            "insights": false,
+            "getable": true,
+            "setable": false,
+            "units": {
+              "en": "",
+              "es": ""
+            },
+            "uiQuickAction": false,
+            "icon": "/assets/slot3.svg"
         }
     },
-    "drivers": [
+    "drivers": [ 
         {
             "id": "moodo",
             "name": {
-                "en": "Moodo"
+                "en": "Moodo",
+                "es": "Moodo"
             },
             "images": {
                 "small": "drivers/moodo/assets/images/small.png",
@@ -99,10 +239,33 @@
             "class": "fan",
             "capabilities": [
                 "onoff",
+                "favs",
                 "mode_interval",
                 "dim",
-                "shuffle"  
+                "shuffle",
+                "fav",
+                "shuffles",
+                "slot0",
+                "slot1",
+                "slot2",
+                "slot3",
+                "button.favorites"  
             ],
+            "capabilitiesOptions": {
+                "dim": {
+                  "title": {
+                    "en": "Fan Speed",
+                    "es": "Velocidad Ventilador"
+                  }
+                },
+                "button.favorites": {
+                  "maintenanceAction": true,
+                  "title": { 
+                     "en": "Refrsh Favorites/DO NOT WORK",
+                     "es": "Actualiza Favoritos/NO FUNCIONA"
+                  }
+                }
+            },
             "pair": [
                 {
                     "id": "start",
@@ -125,6 +288,37 @@
                 {
                     "id": "add_my_devices",
                     "template": "add_devices"
+                }
+            ],
+            "settings": [
+                {
+                  "type": "group",
+                  "label": {
+                    "en": "Device Settings",
+                    "es": "Configuración Equipo"
+                  },
+                  "children": [
+                        {
+                          "id": "time",
+                          "type": "number",
+                          "label": {
+                              "en": "Time (min) to set Moodo when turned On",
+                              "es": "Tiempo (min) de funcionamiento cuando se encienda"
+                          },
+                          "value": 60,
+                          "min": 10,
+                          "max": 600
+                        },
+                        {
+                          "id": "favorites",
+                          "type": "checkbox",
+                          "value": false,
+                          "label": {
+                            "en": "Show Only my favorites",
+                            "es": "Muestra solo mis favoritos"
+                          }
+                        }
+                    ]
                 }
             ]
         }
