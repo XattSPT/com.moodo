@@ -14,7 +14,7 @@
         "tools",
         "climate"
     ],
-	"version": "1.5.0",
+	"version": "1.5.1",
     "compatibility": ">=3.0.0",
     "tags": {
         "en": [
@@ -58,7 +58,7 @@
             },
             "getable": true,
             "setable": true,
-            "uiComponent": null,
+            "uiComponent": "picker",
             "uiQuickAction": true,
             "values":[
               { "id": "XVBEdF9eiEZ_i0WX", "title": "Prova" },
