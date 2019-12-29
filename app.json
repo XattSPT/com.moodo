@@ -14,7 +14,7 @@
         "tools",
         "climate"
     ],
-	"version": "1.5.1",
+	"version": "1.5.2",
     "compatibility": ">=3.0.0",
     "tags": {
         "en": [
@@ -238,7 +238,6 @@
             },
             "class": "fan",
             "capabilities": [
-                "favs",
                 "mode_interval",
                 "dim",
                 "shuffle",
@@ -248,21 +247,13 @@
                 "slot0",
                 "slot1",
                 "slot2",
-                "slot3",
-                "button.favorites"  
+                "slot3"
             ],
             "capabilitiesOptions": {
                 "dim": {
                   "title": {
                     "en": "Fan Speed",
                     "es": "Velocidad Ventilador"
-                  }
-                },
-                "button.favorites": {
-                  "maintenanceAction": true,
-                  "title": { 
-                     "en": "Refrsh Favorites/DO NOT WORK",
-                     "es": "Actualiza Favoritos/NO FUNCIONA"
                   }
                 }
             },
@@ -322,5 +313,27 @@
                 }
             ]
         }
-    ]
+    ],
+    "flow": {
+      "actions": [
+        {
+          "title": {
+            "en": "Set essence",
+            "es": "Seleeciona una essencia"
+          },
+          "args": [
+            {
+              "type": "device",
+              "name": "device",
+              "filter": "driver_id=moodo"
+            },
+            {
+              "type": "autocomplete",
+              "name": "effect"
+            }
+          ],
+          "id": "set_effect"
+        }
+      ]
+    }
 }
