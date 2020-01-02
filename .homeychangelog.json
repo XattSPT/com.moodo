@@ -1,5 +1,8 @@
 {
   "1.5.0": {
     "en": "Added Essences as Sensors"
+  },
+  "1.5.2": {
+    "en": "Action FlowCard to set Essence"
   }
 }

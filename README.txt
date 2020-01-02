@@ -7,5 +7,5 @@ This app integrate `Moodo` into Homey.
 1. Install app
 2. Add device(s) to Homey.
 
-From 1.5.2: Available Action Flowcard to set Essence.
+Note: Essences can be set using Action Flowcard
 
