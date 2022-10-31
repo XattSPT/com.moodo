@@ -14,6 +14,9 @@ The repository is available at: https://github.com/XattSPT/com.moodo
 
 
 ## Change Log:
+### v 1.5.4
+Minor bugfixes. 
+
 ### v 1.5.3
 Added Action Flowcard to set essence. 
 

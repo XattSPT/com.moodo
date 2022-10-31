@@ -14,7 +14,7 @@
         "tools",
         "climate"
     ],
-	"version": "1.5.3",
+	"version": "1.5.4",
     "compatibility": ">=3.0.0",
     "tags": {
         "en": [
@@ -58,8 +58,8 @@
             },
             "getable": true,
             "setable": true,
-            "uiComponent": "picker",
-            "uiQuickAction": true,
+            "uiComponent": null,
+            "uiQuickAction": false,
             "values":[
               { "id": "XVBEdF9eiEZ_i0WX", "title": "Prova" },
               { "id": "WwP8ZV9eiKIii0YJ", "title": "Cava Sprinkles" },
@@ -78,7 +78,7 @@
             "getable": true,
             "setable": true,
             "uiComponent": "picker",
-            "uiQuickAction": true,
+            "uiQuickAction": false,
             "values": [
                 {
                   "id": "off",
@@ -119,7 +119,7 @@
           "getable": true,
           "setable": true,
           "uiComponent": "toggle",
-          "uiQuickAction": true,
+          "uiQuickAction": false,
           "icon": "/assets/shuffle.svg"
         },
         "shuffles": {
@@ -238,10 +238,10 @@
             },
             "class": "fan",
             "capabilities": [
+                "onoff",
                 "mode_interval",
                 "dim",
                 "shuffle",
-                "onoff",
                 "fav",
                 "shuffles",
                 "slot0",
