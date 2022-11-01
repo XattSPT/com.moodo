@@ -11,20 +11,3 @@ This app integrate `Moodo` into Homey.
   
 ## Final note ##
 The repository is available at: https://github.com/XattSPT/com.moodo
-
-
-## Change Log:
-### v 1.5.4
-Minor bugfixes. 
-
-### v 1.5.3
-Added Action Flowcard to set essence. 
-
-### v 1.5.1
-Added new capabilities. 
-
-### v 1.0.1
-Fix loosing config after a day. 
-
-### v 1.0.0
-First public release
